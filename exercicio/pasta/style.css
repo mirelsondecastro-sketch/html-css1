@@ -1,0 +1,8 @@
+@charset "UTF-8";
+body{
+ background-color: rgb(133, 236, 138);
+font-family: 'Times New Roman', Times, serif; color: black;
+}
+p{
+    text-align: justify;
+}

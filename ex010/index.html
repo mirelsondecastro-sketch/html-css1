@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="lg-html.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+      <p>Avamos aumentar e diminuir a janela do navegador para ver se as images estão funcionando</p>
+
+      <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+           <img src="imagens/foto-g.png" alt="Imagem flexível">
+      </picture>
+       <h1>Colocando Áudio</h1>
+       <audio preload="metadata" autoplay controls>
+
+       <source src="midia/summer-show.mp3" type="audio/mpeg">
+       <source src="midia/summer-show.ogg" type="audio/ogg">
+
+       </audio><br>
+       <audio src="midia/happy-mistake.mp3" autoplay controls></audio><br>
+       <audio src="AUD-20250608-WA0009.mp3" autoplay controls></audio><br>
+       <audio src="Beast_on_trap.mp3" autoplay controls></audio>
+
+       
+      <h1>Colocando Vídeo</h1>
+      <p>Para adicionar um vídeo em seu site utiliza-se a tag &lt;video&gt; &lt;/video&gt;</p>
+
+
+         <video width="300px" poster="imagens/foto-p.png.jpg" controls>
+      <source src="midia/meu-video.mp4" type="video/mp4">
+      <source src="midia/meu-video.wbem.webm" type="video/wbem">
+      <source src="midia/meu-video.ogv.ogv" type="video/ogg">
+    
+    </video>
+      
+
+</body>
+</html>

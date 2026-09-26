@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(231, 192, 62);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+background-color: blue;
+}
+#mirelson{
+    text-align: center;
+    color: black;
+    background-color:rgb(231, 192, 62); ;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+} 
+.king{
+    color: rgb(216, 25, 241);
+    text-indent: 30px;
+    text-align: center;
+}
+.miro{
+    color: rgb(187, 25, 25);
+}
+.marcos{
+    color: green;
+}
+
+.boy{
+
+    color: rgba(18, 226, 105, 0.76);
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+}

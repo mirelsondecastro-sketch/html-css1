@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+     <style>
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     a {
+        font-weight: bold;
+        text-decoration: none;
+        
+     }
+     a:visited{
+        color: red;
+     }
+     a:hover{
+     color: black;
+     text-decoration: underline;
+     }
+     a:active{
+        color: blue;
+     }
+     
+    .mirelson::after{
+        content:">>";
+    }
+    .mirelson::before{
+        content: "<<";
+    }
+
+
+
+
+     </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <li><a href="https://facebook.com/Mi Rel Son" target="_blank" rel="external" class="mirelson">Minha conta do  Facebook</a></li>
+        <li><a href="https://instagram.com/mirel_son23" target="_blank" rel="external" class="mirelson">Minha conta do Instagram</a></li>
+        <li><a href="https://youtube.com/@mirelsondecastro" target="_blank" rel="external" class="mirelson">Minha conta do Youtube</a></li>
+    </ul>
+</body>
+</html>
