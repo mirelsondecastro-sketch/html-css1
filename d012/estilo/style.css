@@ -60,12 +60,28 @@
  }
  section.imagem{
    background-color: rgb(68, 68, 68);
+   box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
    color: white;
+   background-attachment: fixed;
  }
  section.imagem > p{
- 
+  width: 400px;
    padding: 5px;
-   background-color: rgba(0, 0, 0, 0.295);
+   text-shadow: 1px 1px 1px black;
+   background-color: rgba(0, 0, 0, 0.466);
+ }
+ section > p{
+  padding-bottom: 2em;
+ }
+ section#miro01{
+background-image: url('../imagens/background001.jpg');
+background-size: cover;
+background-position: right center;
+ }
+ section#miro02{
+background-image: url('../imagens/background002.jpg');
+background-position: right center;
+background-size: cover;
  }
  footer{
    background-color: black;
