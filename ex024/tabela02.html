@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            margin: auto;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        p{
+          text-align: center;
+            padding-bottom: 10px;
+        }
+        table{
+            width: 400px;
+            margin-left: 30px;
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+        td.r{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas complexas</h1>
+    <p>OBS: Os números de <strong>População</strong> na tabela são aleatórios</p>
+    <table>
+        <thead>
+            <tr> 
+                <th>País</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Angola</td>
+                <td class="r">49 555 167</td>
+            </tr>
+            <tr>
+                <td>Argélia </td>
+                <td class="r">4 199 280</td>
+            </tr>
+            <tr>
+                <td>África do Sul</td>
+                <td class="r">50 765 381</td>
+            </tr>
+            <tr>
+                <td>Moçambique</td>
+                <td class="r">29 643 149</td>
+            </tr>
+            <tr>
+                <td>Marrocos</td>
+                <td class="r">34 563 321</td>
+            </tr>
+            <tr>
+                <td>Ghana</td>
+                <td class="r">51 679 580</td>
+            </tr>
+            <tr>
+                <td>Senegal</td>
+                <td class="r">47 498 634</td>
+            </tr>
+            <tr>
+                <td>Nigéria</td>
+                <td class="r">23 667 456</td>
+            </tr>
+            <tr>
+                <td>Egipto</td>
+                <td class="r">5 673 561</td>
+            </tr>
+            <tr>
+                <td>Mali</td>
+                <td class="r">3 456 120</td>
+            </tr>
+            <tr>
+                <td>Malawi</td>
+                <td class="r">5 432 410</td>
+            </tr>
+            <tr>
+                <td>Botswana</td>
+                <td class="r">4 347 580</td>
+            </tr>
+            <tr>
+                <td>Costa do Marfim</td>
+                <td class="r">6 432 580</td>
+            </tr>
+            <tr>
+                <td>Cabo Verde</td>
+                <td class="r">9 798 580</td>
+            </tr>
+            <tr>
+                <td>Guiné-Bissau</td>
+                <td class="r">11 247 580</td>
+            </tr>
+            <tr>
+                <td>Líbia</td>
+                <td class="r">41 779 380</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Total de haitantes</strong></td>
+                <td class="r"><strong>000000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
