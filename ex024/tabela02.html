@@ -25,7 +25,9 @@
         table{
             width: 400px;
             margin-left: 30px;
+            position: relative;
             border-collapse: collapse;
+            margin: auto;
         }
         thead, tfoot{
             background-color: gray;
@@ -36,8 +38,22 @@
             padding: 5px;
 
         }
+        thead > tr >th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
         td.r{
             text-align: right;
+        }
+        caption{
+            padding: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: gray;
         }
     </style>
 </head>
@@ -45,10 +61,11 @@
     <h1>Uso de tabelas complexas</h1>
     <p>OBS: Os números de <strong>População</strong> na tabela são aleatórios</p>
     <table>
+        <caption>População dos países africanos</caption>
         <thead>
             <tr> 
-                <th>País</th>
-                <th>População</th>
+                <th scope="col">País</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -116,13 +133,56 @@
                 <td>Líbia</td>
                 <td class="r">41 779 380</td>
             </tr>
+            <tr>
+                <td>Namíbia</td>
+                <td class="r">4 879 000</td>
+            </tr>
+            <tr>
+                <td>República Democrática do Congo</td>
+                <td class="r">13 536 890</td>
+            </tr>
+            <tr>
+                <td>República Centro Africana</td>
+                <td class="r">5 903 562</td>
+            </tr>
+            <tr>
+                <td>Madagáscar</td>
+                <td class="r">766 859</td>
+            </tr>
+            <tr>
+                <td>Bénin</td>
+                <td class="r">5 890 423</td>
+            </tr>
+            <tr>
+                <td>Tunísia</td>
+                <td class="r">3 475 145</td>
+            </tr>
+            <tr>
+                <td>Guiné-Equatorial</td>
+                <td class="r">4 789 925</td>
+            </tr>
+            <tr>
+                <td>Guiné-Konacri</td>
+                <td class="r">8 453 231</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td><strong>Total de haitantes</strong></td>
-                <td class="r"><strong>000000</strong></td>
+                <th scope="row"><strong>Total de haitantes</strong></th>
+                <th class="r" scope="row"><strong>000000</strong></th>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam tenetur ex explicabo, at iure hic numquam, voluptas ullam ut harum nesciunt labore accusantium debitis deleniti repellat natus corrupti architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat, asperiores numquam veritatis debitis est officiis vitae ex quae, minima voluptates. Laboriosam voluptates quasi amet recusandae sed iste eligendi aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit ad? Consequuntur obcaecati inventore amet cumque, ex iure eum placeat exercitationem illum. Aperiam dolores animi suscipit nihil eveniet adipisci rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum dolores enim vitae sint laboriosam tempora, sunt quod repudiandae, neque porro, sed incidunt corrupti aperiam sequi magni aut earum provident.</p>
+
+
 </body>
 </html>
