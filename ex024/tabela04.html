@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            padding: 10px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        th , td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Exercício com tabelas</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Julieta Azevedo</td>
+                <td>Vingadores</td>
+                <td>Aliens 4</td>
+                <td>Extreminador</td>
+            </tr>
+            <tr>
+                <td>Luísa Avezedo</td>
+                <td>Iron Man</td>
+                <td>Super Man</td>
+                <td>BatMan</td>
+            </tr>
+            <tr>
+                <td>Angelina Azevedo</td>
+                <td>The Conjure</td>
+                <td>Exorcismo</td>
+                <td>Ataque ao Poder</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>José Castro</td>
+                <td>Matrix</td>
+                <td>Spider-Man</td>
+                <td>Jumanji</td>
+            </tr>
+            <tr>
+                <td>Marcos Campos</td>
+                <td>Mortal Kombat</td>
+                <td>Liga da justiça</td>
+                <td>Aquaman</td>
+            </tr>
+            <tr>
+                <td>José Matiais</td>
+                <td>The Flash</td>
+                <td>Capitão América</td>
+                <td>Hulk</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>000000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
