@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios com Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        th , td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .nome{
+            background-color: red;
+        }
+        .idade{
+            background-color: gold;
+        }
+        .profissão{
+            background-color: yellow;
+        }
+        .sexo{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Cadastro</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="idade">
+            <col class="profissão">
+            <col class="sexo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+            <th>Sexo</th>
+        </tr>
+        <tr>
+            <td>Marcos Campos</td>
+            <td>18 anos</td>
+            <td>Cyber Security</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>José Mateus</td>
+            <td>18 anos</td>
+            <td>Programador</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>Lucas Manuel</td>
+            <td>19 anos</td>
+            <td>Designer Profissional</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>Paulo Henrriques</td>
+            <td>19 anos</td>
+            <td>Full Stack</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>Rosa Mestre</td>
+            <td>17 anos</td>
+            <td>Engenheira de Redes</td>
+            <td>F</td>
+        </tr>
+ 
+    </table>
+    
+</body>
+</html>
