@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste com formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iest">Províncias:</label>
+            <select name="estado" id="iest">
+                <option selected>--Escolha--</option>
+                <optgroup label="Região Norte">
+                    <option value="LD">Luanda</option>
+                    <option value="UG">Uíge</option>
+                    <option value="CB">Cabinda</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="BG">Benguela</option>
+                    <option value="NB">Namibe</option>
+                    <option value="HB">Huambo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissões:</label>
+            <input type="text" name="prof" id="iprof" list="profi">
+            <datalist id="profi">
+                <option>Programador</option>
+                <option>Cyber Segurança</option>
+                <option>Enfermeiro</option>
+                <option>Cozinheiro</option>
+            </datalist>
+
+        </p>
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Excluir">
+        </p>
+    </form>
+</body>
+</html>

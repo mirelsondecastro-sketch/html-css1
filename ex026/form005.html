@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isem" required value="M"> <label for="isem">Masculino</label><br>
+            <input type="radio" name="sexo" id="isef" value="F" required>
+            <label for="isef">Femenino</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Disciplinas favoritas</legend>
+            <input type="checkbox" name="tlp" id="itlp"> <label for="itlp">TLP</label> <br>
+            <input type="checkbox" name="trei" id="itrei"> <label for="itrei">TREI</label> <br>
+            <input type="checkbox" name="seac" id="iseac"> <label for="iseac">SEAC</label> <br>
+            <input type="checkbox" name="mat" id="imat"> <label for="imat">MAT</label> <br>
+            <input type="checkbox" name="fis" id="ifis"> <label for="ifis">FIS</label> <br>
+            <input type="checkbox" name="ogi" id="iogi"> <label for="iogi">OGI</label> <br>
+            <input type="checkbox" name="emp" id="iemp"> <label for="iemp">EMP</label> <br>
+            <input type="checkbox" name="pt" id="ipt"> <label for="ipt">PT</label>  <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Excluir">
+        </p>
+    </form>
+</body>
+</html>
